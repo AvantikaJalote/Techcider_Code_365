@@ -9,14 +9,14 @@ Sample input 2 - 5 2 3
 Sample output 2 - 3
 
 """
-M,Y,X= map(int,input().split())
+M,X,Y= map(int,input().split())
 no_of_pos=0
 i=0
 j=M
 
-while 0<=i<=Y and X<=j<=M:
+while 0<=i<=Y and X<j<=M:
     i+=1
-    j-+1
+    j-=1
     no_of_pos+=1
 
 print(no_of_pos)
